@@ -1,14 +1,15 @@
-h1 {
-  background-color: #0ff;
+header {
+  background-color: #2e3f64;
 }
 
 body {
-  background-color: #3c3c3c;
+  background-color: #4666aa;
 }
 
 img#logo_pockeball {
   height: 100px;
   width: 100px;
+  background-color: #2a588d;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */
