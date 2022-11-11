@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;AACA;;;;AACA","sources":["src/assets/sass/main.scss"],"sourcesContent":["h1 { background-color: aqua;}\r\nbody { background-color: rgb(60,60,60); }\r\nimg#logo_pockeball {\r\n    height: 100px;\r\n    width: 100px;\r\n} "],"names":[],"version":3,"file":"index.034b6250.css.map","sourceRoot":"/__parcel_source_root/"}
