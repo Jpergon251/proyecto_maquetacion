@@ -1,15 +1,44 @@
 header {
-  background-color: #2e3f64;
+  background-color: #5e79d8;
+  border-radius: 20px;
+  display: flex;
+}
+
+header > a > img {
+  height: 86px;
 }
 
 body {
-  background-color: #4666aa;
+  background-color: #6e93db;
+  font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+  font-size: xx-large;
 }
 
-img#logo_pockeball {
-  height: 100px;
-  width: 100px;
-  background-color: #2a588d;
+main {
+  grid-template-columns: repeat(2, minmax(20%, 50%));
+  grid-template-rows: repeat(2);
+  gap: 20px;
+  display: grid;
+}
+
+main > a.link {
+  width: minmax(40%, 50%);
+  text-align: center;
+  background-color: #5e79d8;
+  border-radius: 20px;
+  flex-direction: column;
+  margin: 2%;
+  padding: 2%;
+  display: flex;
+}
+
+main > a.link#paginadecontacto {
+  height: auto;
+  grid-area: 1 / 2 / span 3 / 2;
+}
+
+main > a.link#registro {
+  align-self: end;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */
