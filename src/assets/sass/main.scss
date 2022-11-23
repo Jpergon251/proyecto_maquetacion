@@ -1,13 +1,13 @@
 header {
+    display: block;
     background-color: #5E79D8;
     border-radius: 20px;
-    display: flex;
+}
+header > a{
+
 }
 header > a > img{
     height: 86px;
-}
-header > a > img#logo_pokemon{
-
 }
 body { 
     background-color: #6E93DB;
@@ -15,30 +15,21 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 main{
-    display: grid;
-    grid-template-columns:repeat(2, minmax(20%,50%));
-    grid-template-rows: repeat(2);
-    gap: 20px;
+    width: 100%;
 }
-
 main > a.link{
     display: flex;
     flex-direction: column;
     background-color: #5E79D8;
     margin: 2%;
     padding: 2%;
-    width: minmax(40%,50%);
     text-align: center;
+    border-radius: 20px; 
+}
+main > a.link > img{
     border-radius: 20px;
 }
-
-main >a.link#paginadecontacto{    
-    height: auto;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: span 3;
-}
-main >a.link#registro{
-    align-self:end;
+main > a.link#paginadecontacto > img{
+    align-self: center;
+    width: 30%;
 }

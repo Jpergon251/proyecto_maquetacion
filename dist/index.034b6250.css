@@ -1,7 +1,7 @@
 header {
   background-color: #5e79d8;
   border-radius: 20px;
-  display: flex;
+  display: block;
 }
 
 header > a > img {
@@ -15,14 +15,10 @@ body {
 }
 
 main {
-  grid-template-columns: repeat(2, minmax(20%, 50%));
-  grid-template-rows: repeat(2);
-  gap: 20px;
-  display: grid;
+  width: 100%;
 }
 
 main > a.link {
-  width: minmax(40%, 50%);
   text-align: center;
   background-color: #5e79d8;
   border-radius: 20px;
@@ -32,13 +28,13 @@ main > a.link {
   display: flex;
 }
 
-main > a.link#paginadecontacto {
-  height: auto;
-  grid-area: 1 / 2 / span 3 / 2;
+main > a.link > img {
+  border-radius: 20px;
 }
 
-main > a.link#registro {
-  align-self: end;
+main > a.link#paginadecontacto > img {
+  width: 30%;
+  align-self: center;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */
