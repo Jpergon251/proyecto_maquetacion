@@ -1,13 +1,33 @@
 header {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     background-color: #5E79D8;
     border-radius: 20px;
 }
 header > a{
-
+    display: flex;
+}
+header > a#logo2{
+    justify-content: center;
+}
+header > a#logo3{
+    font-size: large;
+    padding-right: 1%;
+    justify-self: end;
+    text-align: center;
+    justify-content: end;
+    flex-direction: column;
+}
+header > a#logo3 > img{
+    width: fit-content;
+    align-self: center;
 }
 header > a > img{
+    width: fit-content;
+    align-items: center;
     height: 86px;
+    padding: 1%
 }
 body { 
     background-color: #6E93DB;
@@ -22,12 +42,13 @@ main > a.link{
     flex-direction: column;
     background-color: #5E79D8;
     margin: 2%;
-    padding: 2%;
+    padding: 1%;
     text-align: center;
     border-radius: 20px; 
 }
 main > a.link > img{
     border-radius: 20px;
+    border-style: solid;
 }
 main > a.link#paginadecontacto > img{
     align-self: center;

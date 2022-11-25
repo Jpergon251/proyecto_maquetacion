@@ -1,11 +1,40 @@
 header {
   background-color: #5e79d8;
   border-radius: 20px;
-  display: block;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+}
+
+header > a {
+  display: flex;
+}
+
+header > a#logo2 {
+  justify-content: center;
+}
+
+header > a#logo3 {
+  text-align: center;
+  flex-direction: column;
+  justify-content: end;
+  justify-self: end;
+  padding-right: 1%;
+  font-size: large;
+}
+
+header > a#logo3 > img {
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
 }
 
 header > a > img {
+  width: -moz-fit-content;
+  width: fit-content;
   height: 86px;
+  align-items: center;
+  padding: 1%;
 }
 
 body {
@@ -24,11 +53,12 @@ main > a.link {
   border-radius: 20px;
   flex-direction: column;
   margin: 2%;
-  padding: 2%;
+  padding: 1%;
   display: flex;
 }
 
 main > a.link > img {
+  border-style: solid;
   border-radius: 20px;
 }
 
