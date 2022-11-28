@@ -1,0 +1,18 @@
+main{
+    a.link{
+        display: flex;
+        flex-direction: column;
+        background-color: $colorFondoCuadros;
+        margin: 2%;
+        padding: 1%;
+        text-align: center;
+        border-radius: 20px; 
+        img{
+            border-radius: 20px;
+            border-style: solid;
+        }
+    }
+    a.link#paginadecontacto > img{
+        align-self: center;
+    }
+}
