@@ -1,0 +1,43 @@
+@mixin inputs {
+    width: 450px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    border: 0;
+    border-radius: 5px;
+    padding: 30px 20px;
+    margin: 15px;
+    line-height: inherit;
+    transition: 0.3s ease;
+}
+
+form {
+    font-size: xx-large;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: $colorFondoCuadros;
+    padding: 10px 5px;
+    input{
+        @include inputs;
+    }
+    input:focus{
+        background-color: rgb(196, 196, 196);
+    }
+    input:focus-visible{
+        outline: 0;
+    }
+    button{
+        color: rgb(85, 85, 85);
+        font-size: large;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-top: 10px;
+        padding: 10px 40px;
+        border: 0;
+        border-radius: 20px;
+        background-color: white;
+    }
+}

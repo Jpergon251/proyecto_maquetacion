@@ -1,18 +1,35 @@
-main{
+
+
+main.index{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: start;
     a.link{
+        text-decoration: none;
+        font-style: normal;
+        color: white;
         display: flex;
         flex-direction: column;
-        background-color: $colorFondoCuadros;
         margin: 2%;
-        padding: 1%;
+        padding-bottom: 1%;
         text-align: center;
-        border-radius: 20px; 
+        border-radius: 10px;
         img{
-            border-radius: 20px;
-            border-style: solid;
+            background-clip: border-box;
+            background-color: $colorFondoCuadros;
+            border-radius: 10px; 
+            border: 2px solid;
+            border-color: black;
         }
     }
     a.link#paginadecontacto > img{
         align-self: center;
     }
+}
+
+main.formularios{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
