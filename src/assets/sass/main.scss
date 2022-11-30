@@ -6,7 +6,7 @@
 
 @import 'layout/main';
 @import 'layout/navigation';
-@import 'layout/grid';
+@import 'layout/sections';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/forms';
@@ -15,4 +15,9 @@
 html {
     width: 100%;
     height: 100%;
+}
+h1, h2, h3, h4, h5, h6, h7, h8 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin-top: 0;
 }

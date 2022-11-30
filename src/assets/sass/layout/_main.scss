@@ -1,16 +1,16 @@
 
 
 main.index{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
     justify-items: start;
+    background-color: white;
     a.link{
         text-decoration: none;
         font-style: normal;
-        color: white;
+        font-size: larger;
+        color: black;
         display: flex;
         flex-direction: column;
-        margin: 2%;
         padding-bottom: 1%;
         text-align: center;
         border-radius: 10px;

@@ -13,13 +13,12 @@
 form {
     font-size: xx-large;
     color: white;
-    width: fit-content;
-    height: fit-content;
+    width: minmax(fit-content);
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    background-color: $colorFondoCuadros;
+    background-color: $colorFondoheader;
     padding: 10px 5px;
     input{
         @include inputs;
