@@ -1,3 +1,19 @@
-section.cateroias{
-    display: block;
+.categorias {
+    background-color: $colorFondoCuadros;
+    border-radius: 8px;
+    max-width: 1180px;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px 10%;
+}
+.registro{
+    display: flex;
+    background-color: $colorFondoCuadros;
+    border-radius: 8px;
+    max-width: 1180px;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px 10%;
 }

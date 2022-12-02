@@ -4,6 +4,7 @@
 @import 'utilities/variables';
 @import 'utilities/mixins';
 
+@import 'layout/list';
 @import 'layout/main';
 @import 'layout/navigation';
 @import 'layout/sections';
@@ -12,12 +13,4 @@
 @import 'layout/forms';
 @import 'layout/body';
 
-html {
-    width: 100%;
-    height: 100%;
-}
-h1, h2, h3, h4, h5, h6, h7, h8 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    margin-top: 0;
-}
+
