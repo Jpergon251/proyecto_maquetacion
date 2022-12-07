@@ -11,23 +11,24 @@
 }
 
 form {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xx-large;
-
-    width: minmax(fit-content);
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
     border: 1px solid $borderGrey;
     background-color: $colorFondoCuadros;
-    padding: 10px 5px;
+    padding: 10px 300px;
     input{
         @include inputs;
     }
-    // ::placeholder{ color: $colorFondoCuadros}
+    input:focus::placeholder {
+        color: $colorFondoCuadros;
+    }
     input:focus{
         background-color: $borderGrey;
-        ::placeholder{ color: $colorFondoCuadros}
     }
     input:focus-visible{
         outline: 0;

@@ -1,19 +1,58 @@
-.categorias {
+.categorias{
     background-color: $colorFondoCuadros;
     border-radius: 8px;
-    max-width: 1180px;
     margin: 0px auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 30px 10%;
+    padding: 50px 10%;
+    max-width: fit-content;
+    h1, h2, h3, h4, h5, h6, h7, h8 {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 400;
+        
+    }
+    
+    
 }
 .registro{
     display: flex;
+    flex-direction: row;
     background-color: $colorFondoCuadros;
     border-radius: 8px;
-    max-width: 1180px;
     margin: 0px auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 30px 10%;
+    padding: 50px 10%;
+    max-width: fit-content;
+}
+
+.section {
+    display: block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 50px auto;
+    background-color: $colorFondoCuadros;
+    overflow: hidden;
+    max-width: fit-content;
+    width: 100%;
+    padding: 1em 0;
+    
+}
+@media (min-width: 1px) and (max-width: 460px){
+.container, .container.custom-background.us, .container.custom-background.non-us, .content-wrapper, .section {
+    background: #fff;
+}
+}
+.pokedex-results {
+    position: relative;
+    height: auto;
+}
+.pag-contacto{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 10%;
+    img{
+        width: 500px;
+        height: 450px;
+    }
 }
