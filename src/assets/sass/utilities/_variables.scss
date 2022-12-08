@@ -55,3 +55,21 @@ $borderGrey: rgb(200, 200, 200);
     background-color: #729f3f;
     color: #fff;
 }
+.background-color-psychic {
+    background: -webkit-linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+    background: -ms-linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+    background: -moz-linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+    background: -o-linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+    background: linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+    background-color: #f366b9;
+    color: #fff;
+}
+.background-color-ice {
+    background: -webkit-linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+    background: -ms-linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+    background: -moz-linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+    background: -o-linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+    background: linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+    background-color: #51c4e7;
+    color: #212121;
+}
