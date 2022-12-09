@@ -43,6 +43,14 @@ ul {
     padding: 0px;
 }
 //Pokemon list
+.animating:hover{
+    animation-duration: 0.3s;
+    animation-name: jumping;
+}
+@keyframes jumping {
+    0%,100%{transform: translateY(0);}
+    50%{transform: translateY(-10px);}
+}
 .pokedex-results .results {
     float: left;
     margin-right: -100%;
@@ -102,6 +110,11 @@ ul {
             }
         }
     }
+}
+@media screen and (max-width: 509px){
+.pokedex-results .results li {
+    width: 100%;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 1023px){
 .pokedex-results .results li {

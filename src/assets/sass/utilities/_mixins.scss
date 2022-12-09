@@ -1,0 +1,11 @@
+@mixin inputs {
+    width: 450px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    border-color: $borderGrey;
+    border-radius: 5px;
+    padding: 30px 20px;
+    margin: 15px;
+    line-height: inherit;
+    transition: 0.3s ease;
+}
