@@ -1,4 +1,14 @@
 //Index
+.section {
+    display: block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 50px auto;
+    background-color: $colorFondoCuadros;
+    overflow: hidden;
+    max-width: fit-content;
+    width: 100%;
+    padding: 1em 0;
+}
 .categorias{
     background-color: $colorFondoCuadros;
     border-radius: 8px;
@@ -15,9 +25,13 @@
     }   
 }
 //Pagina de registro
-.registro{
+@media screen and (max-width: 800px) {
+.registro,.login, .pag-contacto{
+    flex-direction: column;
+}
+}
+.registro, .login{
     display: flex;
-    flex-direction: row;
     background-color: $colorFondoCuadros;
     border-radius: 8px;
     margin: 0px auto;
@@ -25,21 +39,16 @@
     margin-bottom: 20px;
     padding: 50px 10%;
     max-width: fit-content;
+    img{
+        width: 550;
+        height: 450;
+    }
 }
 
-.section {
-    display: block;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 50px auto;
-    background-color: $colorFondoCuadros;
-    overflow: hidden;
-    max-width: fit-content;
-    width: 100%;
-    padding: 1em 0;
-}
+
 //Pagina de listado
 @media (min-width: 1px) and (max-width: 460px){
-.container, .container.custom-background.us, .container.custom-background.non-us, .content-wrapper, .section {
+.section {
     background: $colorFondoCuadros;
 }
 }
@@ -48,18 +57,19 @@
     height: auto;
 }
 //Pagina de producto
+
 .pokemon-number {
     color: #616161;
     margin-left: 0.125em;
 }
 .pokedex-pokemon-details {
     .pokemon-card{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 50% 50%;
-    width: 1440px;
-    padding: 50px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 50% 50%;
+        width: 1440px;
+        padding: 50px;
         figure{
             float: left;
             width: fit-content;
@@ -151,11 +161,16 @@
         }
     }
 }
+@media screen and (max-width: 800px){
+    .pokedex-pokemon-details .pokemon-card{
+        width: 100%;
+        grid-template-columns: 100%;
+    }
+}
 
 //Pagina de contacto
 .pag-contacto{
     display: flex;
-    flex-direction: row;
     padding: 50px 10%;
     img{
         width: 500px;
@@ -234,6 +249,7 @@
     opacity: 1;
 }
 .perfil-card{
+    
     figure{
         float: left;
         width: fit-content;
@@ -242,6 +258,7 @@
         border-radius: 100%;
         display: block;
         position: relative; 
+        margin: 0 30px;
         img{
             float: left;
             width: 100px;

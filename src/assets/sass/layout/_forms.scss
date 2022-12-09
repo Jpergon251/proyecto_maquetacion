@@ -24,9 +24,14 @@ form {
         
     }
     button{
+        a{
+            color: $colorFondoCuadros;
+            font-size: large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;        
+        }
         color: $colorFondoCuadros;
-        font-size: large;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         margin-top: 10px;
         padding: 10px 40px;
         border: 0;
@@ -36,7 +41,15 @@ form {
         transition: 0.3s;
     }
     button:hover{
-            cursor: pointer;
-            opacity: 1;
+        cursor: pointer;
+        opacity: 1;
+        .texto{
+            color: #6d6d6d;
+            margin-left: 70%;
+            text-decoration: none;
         }
+        .texto:hover{
+            text-decoration: underline;
+        }
+    }
 }

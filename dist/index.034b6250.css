@@ -198,6 +198,18 @@ ul {
   }
 }
 
+.section {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  width: 100%;
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 1em 0;
+  font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+  display: block;
+  overflow: hidden;
+}
+
 .categorias {
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -213,31 +225,29 @@ ul {
   font-weight: 400;
 }
 
-.registro {
+@media screen and (max-width: 800px) {
+  .registro, .login, .pag-contacto {
+    flex-direction: column;
+  }
+}
+
+.registro, .login {
   max-width: -moz-fit-content;
   max-width: fit-content;
   background-color: #fff;
   border-radius: 8px;
-  flex-direction: row;
   margin: 20px auto;
   padding: 50px 10%;
   display: flex;
 }
 
-.section {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  width: 100%;
-  background-color: #fff;
-  margin: 50px auto;
-  padding: 1em 0;
-  font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
-  display: block;
-  overflow: hidden;
+.registro img, .login img {
+  width: 550px;
+  height: 450px;
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
-  .container, .container.custom-background.us, .container.custom-background.non-us, .content-wrapper, .section {
+  .section {
     background: #fff;
   }
 }
@@ -355,8 +365,14 @@ ul {
   display: block;
 }
 
+@media screen and (max-width: 800px) {
+  .pokedex-pokemon-details .pokemon-card {
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+}
+
 .pag-contacto {
-  flex-direction: row;
   padding: 50px 10%;
   display: flex;
 }
@@ -459,6 +475,7 @@ ul {
   height: fit-content;
   background: #f2f2f2;
   border-radius: 100%;
+  margin: 0 30px;
   display: block;
   position: relative;
 }
@@ -581,9 +598,25 @@ form button {
   transition: all .3s;
 }
 
+form button a {
+  color: #fff;
+  font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+  font-size: large;
+}
+
 form button:hover {
   cursor: pointer;
   opacity: 1;
+}
+
+form .texto {
+  color: #6d6d6d;
+  margin-left: 70%;
+  text-decoration: none;
+}
+
+form .texto:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 961px) and (max-width: 1024px) {
