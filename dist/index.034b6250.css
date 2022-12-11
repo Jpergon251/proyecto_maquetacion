@@ -450,12 +450,12 @@ ul {
 
 .log-out {
   color: #fff;
+  height: 100px;
   opacity: .8;
   background-color: #5e79d8;
   border: 0;
   border-radius: 20px;
   margin-top: 10px;
-  margin-left: 50px;
   padding: 20px 60px;
   font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
   font-size: 40px;
@@ -465,6 +465,28 @@ ul {
 .log-out:hover {
   cursor: pointer;
   opacity: 1;
+}
+
+.perfil-card {
+  max-width: 1200px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.perfil-card ul {
+  margin: 20px 40px;
+  font-size: 30px;
+}
+
+.perfil-card ul li {
+  flex-direction: column;
+  display: flex;
+}
+
+.perfil-card ul li .atribute-value {
+  color: gray;
 }
 
 .perfil-card figure {
@@ -482,10 +504,23 @@ ul {
 
 .perfil-card figure img {
   float: left;
-  width: 100px;
+  width: 200px;
   border-radius: 100%;
   position: relative;
   top: 0;
+}
+
+.perfil-card button {
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+@media (max-width: 768px) {
+  .perfil-card {
+    max-width: 100%;
+    flex-direction: column;
+    margin: 10px;
+  }
 }
 
 header {

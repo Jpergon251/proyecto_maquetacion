@@ -236,7 +236,7 @@
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 10px;
-    margin-left: 50px;
+    height: 100px;
     padding: 20px 60px;
     border: 0;
     border-radius: 20px;
@@ -249,7 +249,22 @@
     opacity: 1;
 }
 .perfil-card{
-    
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    ul{
+        margin: 20px 40px;
+        font-size: 30px;
+        li{
+            display: flex;
+            flex-direction: column;
+            .atribute-value{
+                color: #808080;
+            }
+        }
+    }
     figure{
         float: left;
         width: fit-content;
@@ -261,10 +276,22 @@
         margin: 0 30px;
         img{
             float: left;
-            width: 100px;
+            width: 200px;
             position: relative;
             border-radius: 100%;
             top: 0;
         }  
     }
+    button{
+        margin-left: 200px;
+        margin-top: 200px;
+    }
+    
+}
+@media (max-width: 768px){
+ .perfil-card{
+    margin: 10px;
+    max-width: 100%;
+    flex-direction: column;
+ }       
 }
