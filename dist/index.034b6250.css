@@ -210,53 +210,6 @@ ul {
   overflow: hidden;
 }
 
-.section .cambio {
-  cursor: pointer;
-  background: #343d58;
-  border: none;
-  border-radius: 1000px;
-  outline: none;
-  margin-top: 10px;
-  margin-left: 50px;
-  transition: all .6s;
-  display: flex;
-  position: relative;
-}
-
-.section .cambio:after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  top: 0;
-  left: 0;
-  right: unset;
-  background: #fff;
-  border-radius: 100px;
-  transition: all .3s;
-  display: block;
-  position: absolute;
-  box-shadow: 0 0 2px 2px #0003;
-}
-
-.section .cambio.active {
-  color: #dcdcdc;
-  background: #171717;
-}
-
-.section .cambio.active:after {
-  right: 0;
-  left: unset;
-}
-
-.section .cambio span {
-  width: 30px;
-  height: 30px;
-  color: #fff;
-  background: none;
-  line-height: 30px;
-  display: block;
-}
-
 .section.oscuro {
   color: #fff;
   background: #1c1c1c;

@@ -8,49 +8,7 @@
     max-width: fit-content;
     width: 100%;
     padding: 1em 0;
-    .cambio{
-        
-        margin-left: 50px;
-        margin-top: 10px;
-        background: #343D58;
-        border-radius: 1000px;
-        position: relative;
-        cursor: pointer;
-        display: flex;
-        border: none;
-        outline: none;
-        transition: 600ms all;
-        &::after{
-            content: "";
-            display: block;
-            width: 30px;
-            height: 30px;
-            position: absolute;
-            background: white;
-            top: 0;
-            left: 0;
-            right: unset;
-            border-radius: 100px;
-            transition: .3s ease all;
-            box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
-        }
-        &.active{
-            background: rgb(23, 23, 23);
-            color: rgb(220, 220, 220);
-            &::after{
-                right: 0;
-                left: unset;
-            }
-        }
-        span{
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            display: block;
-            background: none;
-            color: white;
-        }
-    }
+    
     &.oscuro{
         background: $colorFondoCuadrosOscuro;
         color: #fff;
