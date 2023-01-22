@@ -14,7 +14,40 @@ body {
     font-weight: 400;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    &.oscuro{
+        background: $colorFondoCuadrosOscuro;
+        color: #fff;
+        header{
+            background: $colorFondoheaderOscuro;
+        }
+        .section{
+            background: #464646;
+            color: #fff;
+            .results{h1,h2,h3,h4,h5,h6{
+                color: #fff;
+            }}
+            a{
+                color: #fff;
+            }
+            .form-login{
+                background: #464646;
+            }
+            .form-register{
+                background: #464646;
+            }
+            .form-contacto{
+                background: #464646;
+            }
+        }
+        footer{
+            background: $colorFondoCuadrosOscuro;
+            a{
+                color: #fff;
+            }
+        }
+    }
 }
+
 
 h1{
     font-size: 30px;

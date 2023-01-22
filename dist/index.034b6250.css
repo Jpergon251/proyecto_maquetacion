@@ -210,6 +210,58 @@ ul {
   overflow: hidden;
 }
 
+.section .cambio {
+  cursor: pointer;
+  background: #343d58;
+  border: none;
+  border-radius: 1000px;
+  outline: none;
+  margin-top: 10px;
+  margin-left: 50px;
+  transition: all .6s;
+  display: flex;
+  position: relative;
+}
+
+.section .cambio:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  right: unset;
+  background: #fff;
+  border-radius: 100px;
+  transition: all .3s;
+  display: block;
+  position: absolute;
+  box-shadow: 0 0 2px 2px #0003;
+}
+
+.section .cambio.active {
+  color: #dcdcdc;
+  background: #171717;
+}
+
+.section .cambio.active:after {
+  right: 0;
+  left: unset;
+}
+
+.section .cambio span {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background: none;
+  line-height: 30px;
+  display: block;
+}
+
+.section.oscuro {
+  color: #fff;
+  background: #1c1c1c;
+}
+
 .categorias {
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -225,6 +277,10 @@ ul {
   font-weight: 400;
 }
 
+.categorias img {
+  width: 100%;
+}
+
 @media screen and (max-width: 800px) {
   .registro, .login, .pag-contacto {
     flex-direction: column;
@@ -232,18 +288,16 @@ ul {
 }
 
 .registro, .login {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   background-color: #fff;
   border-radius: 8px;
-  margin: 20px auto;
+  margin: 50px auto;
   padding: 50px 10%;
   display: flex;
 }
 
 .registro img, .login img {
-  width: 550px;
-  height: 450px;
+  width: 100%;
+  margin: 10px;
 }
 
 @media (min-width: 1px) and (max-width: 460px) {
@@ -263,7 +317,7 @@ ul {
 }
 
 .pokedex-pokemon-details .pokemon-card {
-  width: 1440px;
+  width: 100%;
   grid-template-columns: 50% 50%;
   place-items: center;
   padding: 50px;
@@ -532,6 +586,52 @@ header {
   display: grid;
 }
 
+header .cambio {
+  cursor: pointer;
+  background: #343d58;
+  border: none;
+  border-radius: 1000px;
+  outline: none;
+  margin: 10px 50px;
+  transition: all .6s;
+  display: flex;
+  position: relative;
+}
+
+header .cambio:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  right: unset;
+  background: #fff;
+  border-radius: 100px;
+  transition: all .3s;
+  display: block;
+  position: absolute;
+  box-shadow: 0 0 2px 2px #0003;
+}
+
+header .cambio.active {
+  color: #dcdcdc;
+  background: #171717;
+}
+
+header .cambio.active:after {
+  right: 0;
+  left: unset;
+}
+
+header .cambio span {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background: none;
+  line-height: 30px;
+  display: block;
+}
+
 header a {
   color: #fff;
   align-items: center;
@@ -583,8 +683,7 @@ header a > img {
 }
 
 form {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   background-color: #fff;
   border: 1px solid #c8c8c8;
   border-radius: 5px;
@@ -597,7 +696,7 @@ form {
 }
 
 form input {
-  width: 450px;
+  width: 100%;
   font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
   font-size: x-large;
   line-height: inherit;
@@ -673,6 +772,36 @@ body {
   line-height: 1.5;
 }
 
+body.oscuro {
+  color: #fff;
+  background: #1c1c1c;
+}
+
+body.oscuro header {
+  background: #253a85;
+}
+
+body.oscuro .section {
+  color: #fff;
+  background: #464646;
+}
+
+body.oscuro .section .results h1, body.oscuro .section .results h2, body.oscuro .section .results h3, body.oscuro .section .results h4, body.oscuro .section .results h5, body.oscuro .section .results h6, body.oscuro .section a {
+  color: #fff;
+}
+
+body.oscuro .section .form-login, body.oscuro .section .form-register, body.oscuro .section .form-contacto {
+  background: #464646;
+}
+
+body.oscuro footer {
+  background: #1c1c1c;
+}
+
+body.oscuro footer a {
+  color: #fff;
+}
+
 h1 {
   font-size: 30px;
 }
@@ -691,8 +820,6 @@ img {
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   vertical-align: baseline;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
   border: 0;
   margin: 0;
   padding: 0;
